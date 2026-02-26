@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Queen's Salon & Studio</title>
+  <meta name="description" content="Browse bridal, makeup, hair, nails, and salon interior work from Queen's Salon & Studio, Islamabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-hero">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Queen's Salon & Studio home">
+        <span class="brand-main">Queen's Salon</span>
+        <span class="brand-sub">Bridal Studio</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="bridal.html">Bridal Experience</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="deals.html">Deals</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html#consultation">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="section-shell">
+        <span class="eyebrow">Gallery</span>
+        <h1>A curated lookbook of bridal beauty, details, and studio atmosphere</h1>
+        <p>Browse highlights from real client sessions across bridal artistry, makeup, hair, nails, and the Queen's studio environment.</p>
+      </div>
+    </section>
+
+    <section class="gallery-layout" data-reveal>
+      <div class="gallery-controls" aria-label="Gallery filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="makeup">Makeup</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn" data-filter="interior">Salon Interior</button>
+      </div>
+
+      <div class="masonry">
+        <figure class="masonry-item" data-category="bridal">
+          <button data-lightbox-src="images/pk-bridal-look.jpg" data-lightbox-alt="Bridal look">
+            <img src="images/pk-bridal-look.jpg" alt="Bridal look">
+            <figcaption class="masonry-overlay">Bridal</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="makeup">
+          <button data-lightbox-src="images/pk-bridal-1.jpg" data-lightbox-alt="Soft glam makeup">
+            <img src="images/pk-bridal-1.jpg" alt="Soft glam makeup">
+            <figcaption class="masonry-overlay">Makeup</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="hair">
+          <button data-lightbox-src="images/pk-hair-styling.jpg" data-lightbox-alt="Hair styling">
+            <img src="images/pk-hair-styling.jpg" alt="Hair styling">
+            <figcaption class="masonry-overlay">Hair</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="nails">
+          <button data-lightbox-src="images/pk-nails-styling.jpg" data-lightbox-alt="Nails styling">
+            <img src="images/pk-nails-styling.jpg" alt="Nails styling">
+            <figcaption class="masonry-overlay">Nails</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="interior">
+          <button data-lightbox-src="images/pk-bridal-2.jpg" data-lightbox-alt="Salon interior one">
+            <img src="images/pk-bridal-2.jpg" alt="Salon interior one">
+            <figcaption class="masonry-overlay">Interior</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="bridal">
+          <button data-lightbox-src="images/pk-bridal-2.jpg" data-lightbox-alt="Bridal portrait two">
+            <img src="images/pk-bridal-2.jpg" alt="Bridal portrait two">
+            <figcaption class="masonry-overlay">Bridal</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="makeup">
+          <button data-lightbox-src="images/pk-bridal-3.jpg" data-lightbox-alt="Event makeup detail">
+            <img src="images/pk-bridal-3.jpg" alt="Event makeup detail">
+            <figcaption class="masonry-overlay">Makeup</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="hair">
+          <button data-lightbox-src="images/pk-bridal-3.jpg" data-lightbox-alt="Styled waves">
+            <img src="images/pk-bridal-3.jpg" alt="Styled waves">
+            <figcaption class="masonry-overlay">Hair</figcaption>
+          </button>
+        </figure>
+        <figure class="masonry-item" data-category="interior">
+          <button data-lightbox-src="images/pk-bridal-2.jpg" data-lightbox-alt="Salon interior two">
+            <img src="images/pk-bridal-2.jpg" alt="Salon interior two">
+            <figcaption class="masonry-overlay">Interior</figcaption>
+          </button>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p><strong>Queen's Salon & Studio</strong><br>Basement Shop No. 8, Bismillah Plaza, Sector I-10 Markaz, Islamabad, Pakistan</p>
+        <p>Phone: <a href="tel:+923305328370">0330 5328370</a> | Email: <a href="mailto:queenstudio71@gmail.com">queenstudio71@gmail.com</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="bridal.html">Bridal</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="deals.html">Deals</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/923305328370" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">W</a>
+  <button class="back-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
