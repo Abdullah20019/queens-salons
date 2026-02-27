@@ -2,6 +2,12 @@
 window.addEventListener("pageshow", (event) => {
   document.body.classList.remove("is-leaving");
   document.body.classList.add("page-ready");
+  // Ensure all reveal sections are visible when restoring from bfcache
+  if (event.persisted) {
+    document.querySelectorAll("[data-reveal]").forEach((el) => {
+      el.classList.add("revealed");
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -57,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
+    { threshold: 0.05, rootMargin: "0px 0px -5% 0px" }
   );
 
   revealEls.forEach((el) => revealObserver.observe(el));
